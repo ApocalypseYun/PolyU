@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Following Path Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Wall Following Path Finder</h1>
+        
+        <div class="controls">
+            <div class="input-group">
+                <label for="rows">Rows:</label>
+                <input type="number" id="rows" min="5" value="20">
+                <label for="cols">Columns:</label>
+                <input type="number" id="cols" min="5" value="20">
+                <button id="create-grid">Create Grid</button>
+            </div>
+            
+            <div class="buttons">
+                <button id="set-start">Set Start</button>
+                <button id="set-end">Set End (Must Be Next To Wall)</button>
+                <button id="set-obstacle">Add Wall/Obstacle</button>
+                <button id="clear-cell">Clear Cell</button>
+                <button id="find-path">Find Path</button>
+                <button id="clear-grid">Clear Grid</button>
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color legend-start"></div>
+                    <span>Start</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-end"></div>
+                    <span>End</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-obstacle"></div>
+                    <span>Wall</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-path"></div>
+                    <span>Path</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color legend-wall-adjacent"></div>
+                    <span>Wall Adjacent (Valid End Points)</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="grid-container"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
