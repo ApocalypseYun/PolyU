@@ -7,75 +7,75 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		624E0DD72DFBFE45005C2A37 /* PBXContainerItemProxy */ = {
+		624B34032E0C801200A9EAFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 624E0DB02DFBFE3D005C2A37 /* Project object */;
+			containerPortal = 624B33E12E0C800400A9EAFF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 624E0DB72DFBFE3D005C2A37;
-			remoteInfo = ChatBot;
+			remoteGlobalIDString = 624B33E82E0C800400A9EAFF;
+			remoteInfo = "Solos-AI-Demo";
 		};
-		624E0DE12DFBFE45005C2A37 /* PBXContainerItemProxy */ = {
+		624B340D2E0C801200A9EAFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 624E0DB02DFBFE3D005C2A37 /* Project object */;
+			containerPortal = 624B33E12E0C800400A9EAFF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 624E0DB72DFBFE3D005C2A37;
-			remoteInfo = ChatBot;
+			remoteGlobalIDString = 624B33E82E0C800400A9EAFF;
+			remoteInfo = "Solos-AI-Demo";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		624E0DB82DFBFE3D005C2A37 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		624E0DD62DFBFE45005C2A37 /* ChatBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		624E0DE02DFBFE45005C2A37 /* ChatBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		624B33E92E0C800400A9EAFF /* Solos-AI-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Solos-AI-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		624B34022E0C801200A9EAFF /* Solos-AI-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Solos-AI-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		624B340C2E0C801200A9EAFF /* Solos-AI-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Solos-AI-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		624E0DE82DFBFE45005C2A37 /* Exceptions for "ChatBot" folder in "ChatBot" target */ = {
+		624B34142E0C801200A9EAFF /* Exceptions for "Solos-AI-Demo" folder in "Solos-AI-Demo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 624E0DB72DFBFE3D005C2A37 /* ChatBot */;
+			target = 624B33E82E0C800400A9EAFF /* Solos-AI-Demo */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		624E0DBA2DFBFE3D005C2A37 /* ChatBot */ = {
+		624B33EB2E0C800400A9EAFF /* Solos-AI-Demo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				624E0DE82DFBFE45005C2A37 /* Exceptions for "ChatBot" folder in "ChatBot" target */,
+				624B34142E0C801200A9EAFF /* Exceptions for "Solos-AI-Demo" folder in "Solos-AI-Demo" target */,
 			);
-			path = ChatBot;
+			path = "Solos-AI-Demo";
 			sourceTree = "<group>";
 		};
-		624E0DD92DFBFE45005C2A37 /* ChatBotTests */ = {
+		624B34052E0C801200A9EAFF /* Solos-AI-DemoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChatBotTests;
+			path = "Solos-AI-DemoTests";
 			sourceTree = "<group>";
 		};
-		624E0DE32DFBFE45005C2A37 /* ChatBotUITests */ = {
+		624B340F2E0C801200A9EAFF /* Solos-AI-DemoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChatBotUITests;
+			path = "Solos-AI-DemoUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		624E0DB52DFBFE3D005C2A37 /* Frameworks */ = {
+		624B33E62E0C800400A9EAFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		624E0DD32DFBFE45005C2A37 /* Frameworks */ = {
+		624B33FF2E0C801200A9EAFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		624E0DDD2DFBFE45005C2A37 /* Frameworks */ = {
+		624B34092E0C801200A9EAFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,22 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		624E0DAF2DFBFE3D005C2A37 = {
+		624B33E02E0C800400A9EAFF = {
 			isa = PBXGroup;
 			children = (
-				624E0DBA2DFBFE3D005C2A37 /* ChatBot */,
-				624E0DD92DFBFE45005C2A37 /* ChatBotTests */,
-				624E0DE32DFBFE45005C2A37 /* ChatBotUITests */,
-				624E0DB92DFBFE3D005C2A37 /* Products */,
+				624B33EB2E0C800400A9EAFF /* Solos-AI-Demo */,
+				624B34052E0C801200A9EAFF /* Solos-AI-DemoTests */,
+				624B340F2E0C801200A9EAFF /* Solos-AI-DemoUITests */,
+				624B33EA2E0C800400A9EAFF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		624E0DB92DFBFE3D005C2A37 /* Products */ = {
+		624B33EA2E0C800400A9EAFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				624E0DB82DFBFE3D005C2A37 /* ChatBot.app */,
-				624E0DD62DFBFE45005C2A37 /* ChatBotTests.xctest */,
-				624E0DE02DFBFE45005C2A37 /* ChatBotUITests.xctest */,
+				624B33E92E0C800400A9EAFF /* Solos-AI-Demo.app */,
+				624B34022E0C801200A9EAFF /* Solos-AI-DemoTests.xctest */,
+				624B340C2E0C801200A9EAFF /* Solos-AI-DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,133 +108,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		624E0DB72DFBFE3D005C2A37 /* ChatBot */ = {
+		624B33E82E0C800400A9EAFF /* Solos-AI-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 624E0DE92DFBFE45005C2A37 /* Build configuration list for PBXNativeTarget "ChatBot" */;
+			buildConfigurationList = 624B34152E0C801200A9EAFF /* Build configuration list for PBXNativeTarget "Solos-AI-Demo" */;
 			buildPhases = (
-				624E0DB42DFBFE3D005C2A37 /* Sources */,
-				624E0DB52DFBFE3D005C2A37 /* Frameworks */,
-				624E0DB62DFBFE3D005C2A37 /* Resources */,
+				624B33E52E0C800400A9EAFF /* Sources */,
+				624B33E62E0C800400A9EAFF /* Frameworks */,
+				624B33E72E0C800400A9EAFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				624E0DBA2DFBFE3D005C2A37 /* ChatBot */,
+				624B33EB2E0C800400A9EAFF /* Solos-AI-Demo */,
 			);
-			name = ChatBot;
+			name = "Solos-AI-Demo";
 			packageProductDependencies = (
 			);
-			productName = ChatBot;
-			productReference = 624E0DB82DFBFE3D005C2A37 /* ChatBot.app */;
+			productName = "Solos-AI-Demo";
+			productReference = 624B33E92E0C800400A9EAFF /* Solos-AI-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		624E0DD52DFBFE45005C2A37 /* ChatBotTests */ = {
+		624B34012E0C801200A9EAFF /* Solos-AI-DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 624E0DEE2DFBFE45005C2A37 /* Build configuration list for PBXNativeTarget "ChatBotTests" */;
+			buildConfigurationList = 624B341A2E0C801200A9EAFF /* Build configuration list for PBXNativeTarget "Solos-AI-DemoTests" */;
 			buildPhases = (
-				624E0DD22DFBFE45005C2A37 /* Sources */,
-				624E0DD32DFBFE45005C2A37 /* Frameworks */,
-				624E0DD42DFBFE45005C2A37 /* Resources */,
+				624B33FE2E0C801200A9EAFF /* Sources */,
+				624B33FF2E0C801200A9EAFF /* Frameworks */,
+				624B34002E0C801200A9EAFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				624E0DD82DFBFE45005C2A37 /* PBXTargetDependency */,
+				624B34042E0C801200A9EAFF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				624E0DD92DFBFE45005C2A37 /* ChatBotTests */,
+				624B34052E0C801200A9EAFF /* Solos-AI-DemoTests */,
 			);
-			name = ChatBotTests;
+			name = "Solos-AI-DemoTests";
 			packageProductDependencies = (
 			);
-			productName = ChatBotTests;
-			productReference = 624E0DD62DFBFE45005C2A37 /* ChatBotTests.xctest */;
+			productName = "Solos-AI-DemoTests";
+			productReference = 624B34022E0C801200A9EAFF /* Solos-AI-DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		624E0DDF2DFBFE45005C2A37 /* ChatBotUITests */ = {
+		624B340B2E0C801200A9EAFF /* Solos-AI-DemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 624E0DF12DFBFE45005C2A37 /* Build configuration list for PBXNativeTarget "ChatBotUITests" */;
+			buildConfigurationList = 624B341D2E0C801200A9EAFF /* Build configuration list for PBXNativeTarget "Solos-AI-DemoUITests" */;
 			buildPhases = (
-				624E0DDC2DFBFE45005C2A37 /* Sources */,
-				624E0DDD2DFBFE45005C2A37 /* Frameworks */,
-				624E0DDE2DFBFE45005C2A37 /* Resources */,
+				624B34082E0C801200A9EAFF /* Sources */,
+				624B34092E0C801200A9EAFF /* Frameworks */,
+				624B340A2E0C801200A9EAFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				624E0DE22DFBFE45005C2A37 /* PBXTargetDependency */,
+				624B340E2E0C801200A9EAFF /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				624E0DE32DFBFE45005C2A37 /* ChatBotUITests */,
+				624B340F2E0C801200A9EAFF /* Solos-AI-DemoUITests */,
 			);
-			name = ChatBotUITests;
+			name = "Solos-AI-DemoUITests";
 			packageProductDependencies = (
 			);
-			productName = ChatBotUITests;
-			productReference = 624E0DE02DFBFE45005C2A37 /* ChatBotUITests.xctest */;
+			productName = "Solos-AI-DemoUITests";
+			productReference = 624B340C2E0C801200A9EAFF /* Solos-AI-DemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		624E0DB02DFBFE3D005C2A37 /* Project object */ = {
+		624B33E12E0C800400A9EAFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					624E0DB72DFBFE3D005C2A37 = {
+					624B33E82E0C800400A9EAFF = {
 						CreatedOnToolsVersion = 16.4;
 					};
-					624E0DD52DFBFE45005C2A37 = {
+					624B34012E0C801200A9EAFF = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 624E0DB72DFBFE3D005C2A37;
+						TestTargetID = 624B33E82E0C800400A9EAFF;
 					};
-					624E0DDF2DFBFE45005C2A37 = {
+					624B340B2E0C801200A9EAFF = {
 						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 624E0DB72DFBFE3D005C2A37;
+						TestTargetID = 624B33E82E0C800400A9EAFF;
 					};
 				};
 			};
-			buildConfigurationList = 624E0DB32DFBFE3D005C2A37 /* Build configuration list for PBXProject "ChatBot" */;
+			buildConfigurationList = 624B33E42E0C800400A9EAFF /* Build configuration list for PBXProject "Solos-AI-Demo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 624E0DAF2DFBFE3D005C2A37;
+			mainGroup = 624B33E02E0C800400A9EAFF;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 624E0DB92DFBFE3D005C2A37 /* Products */;
+			productRefGroup = 624B33EA2E0C800400A9EAFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				624E0DB72DFBFE3D005C2A37 /* ChatBot */,
-				624E0DD52DFBFE45005C2A37 /* ChatBotTests */,
-				624E0DDF2DFBFE45005C2A37 /* ChatBotUITests */,
+				624B33E82E0C800400A9EAFF /* Solos-AI-Demo */,
+				624B34012E0C801200A9EAFF /* Solos-AI-DemoTests */,
+				624B340B2E0C801200A9EAFF /* Solos-AI-DemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		624E0DB62DFBFE3D005C2A37 /* Resources */ = {
+		624B33E72E0C800400A9EAFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		624E0DD42DFBFE45005C2A37 /* Resources */ = {
+		624B34002E0C801200A9EAFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		624E0DDE2DFBFE45005C2A37 /* Resources */ = {
+		624B340A2E0C801200A9EAFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		624E0DB42DFBFE3D005C2A37 /* Sources */ = {
+		624B33E52E0C800400A9EAFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		624E0DD22DFBFE45005C2A37 /* Sources */ = {
+		624B33FE2E0C801200A9EAFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		624E0DDC2DFBFE45005C2A37 /* Sources */ = {
+		624B34082E0C801200A9EAFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,20 +269,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		624E0DD82DFBFE45005C2A37 /* PBXTargetDependency */ = {
+		624B34042E0C801200A9EAFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 624E0DB72DFBFE3D005C2A37 /* ChatBot */;
-			targetProxy = 624E0DD72DFBFE45005C2A37 /* PBXContainerItemProxy */;
+			target = 624B33E82E0C800400A9EAFF /* Solos-AI-Demo */;
+			targetProxy = 624B34032E0C801200A9EAFF /* PBXContainerItemProxy */;
 		};
-		624E0DE22DFBFE45005C2A37 /* PBXTargetDependency */ = {
+		624B340E2E0C801200A9EAFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 624E0DB72DFBFE3D005C2A37 /* ChatBot */;
-			targetProxy = 624E0DE12DFBFE45005C2A37 /* PBXContainerItemProxy */;
+			target = 624B33E82E0C800400A9EAFF /* Solos-AI-Demo */;
+			targetProxy = 624B340D2E0C801200A9EAFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		624E0DEA2DFBFE45005C2A37 /* Debug */ = {
+		624B34162E0C801200A9EAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -290,8 +291,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P878UE7Y85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChatBot/Info.plist;
+				INFOPLIST_FILE = "Solos-AI-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PolyU.ChatBot;
+				PRODUCT_BUNDLE_IDENTIFIER = "PolyU.Solos-AI-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -307,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		624E0DEB2DFBFE45005C2A37 /* Release */ = {
+		624B34172E0C801200A9EAFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -316,8 +319,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P878UE7Y85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChatBot/Info.plist;
+				INFOPLIST_FILE = "Solos-AI-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PolyU.ChatBot;
+				PRODUCT_BUNDLE_IDENTIFIER = "PolyU.Solos-AI-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,7 +338,7 @@
 			};
 			name = Release;
 		};
-		624E0DEC2DFBFE45005C2A37 /* Debug */ = {
+		624B34182E0C801200A9EAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -368,6 +373,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P878UE7Y85;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -391,10 +397,12 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		624E0DED2DFBFE45005C2A37 /* Release */ = {
+		624B34192E0C801200A9EAFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -429,6 +437,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P878UE7Y85;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -445,118 +454,123 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		624E0DEF2DFBFE45005C2A37 /* Debug */ = {
+		624B341B2E0C801200A9EAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P878UE7Y85;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PolyU.ChatBotTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "PolyU.Solos-AI-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatBot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solos-AI-Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Solos-AI-Demo";
 			};
 			name = Debug;
 		};
-		624E0DF02DFBFE45005C2A37 /* Release */ = {
+		624B341C2E0C801200A9EAFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P878UE7Y85;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PolyU.ChatBotTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "PolyU.Solos-AI-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatBot";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Solos-AI-Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Solos-AI-Demo";
 			};
 			name = Release;
 		};
-		624E0DF22DFBFE45005C2A37 /* Debug */ = {
+		624B341E2E0C801200A9EAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P878UE7Y85;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PolyU.ChatBotUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "PolyU.Solos-AI-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChatBot;
+				TEST_TARGET_NAME = "Solos-AI-Demo";
 			};
 			name = Debug;
 		};
-		624E0DF32DFBFE45005C2A37 /* Release */ = {
+		624B341F2E0C801200A9EAFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P878UE7Y85;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PolyU.ChatBotUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "PolyU.Solos-AI-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChatBot;
+				TEST_TARGET_NAME = "Solos-AI-Demo";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		624E0DB32DFBFE3D005C2A37 /* Build configuration list for PBXProject "ChatBot" */ = {
+		624B33E42E0C800400A9EAFF /* Build configuration list for PBXProject "Solos-AI-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				624E0DEC2DFBFE45005C2A37 /* Debug */,
-				624E0DED2DFBFE45005C2A37 /* Release */,
+				624B34182E0C801200A9EAFF /* Debug */,
+				624B34192E0C801200A9EAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		624E0DE92DFBFE45005C2A37 /* Build configuration list for PBXNativeTarget "ChatBot" */ = {
+		624B34152E0C801200A9EAFF /* Build configuration list for PBXNativeTarget "Solos-AI-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				624E0DEA2DFBFE45005C2A37 /* Debug */,
-				624E0DEB2DFBFE45005C2A37 /* Release */,
+				624B34162E0C801200A9EAFF /* Debug */,
+				624B34172E0C801200A9EAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		624E0DEE2DFBFE45005C2A37 /* Build configuration list for PBXNativeTarget "ChatBotTests" */ = {
+		624B341A2E0C801200A9EAFF /* Build configuration list for PBXNativeTarget "Solos-AI-DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				624E0DEF2DFBFE45005C2A37 /* Debug */,
-				624E0DF02DFBFE45005C2A37 /* Release */,
+				624B341B2E0C801200A9EAFF /* Debug */,
+				624B341C2E0C801200A9EAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		624E0DF12DFBFE45005C2A37 /* Build configuration list for PBXNativeTarget "ChatBotUITests" */ = {
+		624B341D2E0C801200A9EAFF /* Build configuration list for PBXNativeTarget "Solos-AI-DemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				624E0DF22DFBFE45005C2A37 /* Debug */,
-				624E0DF32DFBFE45005C2A37 /* Release */,
+				624B341E2E0C801200A9EAFF /* Debug */,
+				624B341F2E0C801200A9EAFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 624E0DB02DFBFE3D005C2A37 /* Project object */;
+	rootObject = 624B33E12E0C800400A9EAFF /* Project object */;
 }
