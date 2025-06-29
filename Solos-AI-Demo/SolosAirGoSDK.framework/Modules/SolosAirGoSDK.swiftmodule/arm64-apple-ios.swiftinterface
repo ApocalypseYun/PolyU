@@ -1,0 +1,558 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SolosAirGoSDK
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import AVFoundation
+import Accelerate
+import CallKit
+import Combine
+import Contacts
+import CoreBluetooth
+import CoreLocation
+import CoreMotion
+import Foundation
+import Photos
+@_exported import SolosAirGoSDK
+import SolosAirGoSDK_Private
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public struct TapSensitivityConfig {
+  public static let MAX_VALUE: Swift.Int
+  public static let MIN_VALUE: Swift.Int
+  public let value: Swift.Int
+  public let x: Swift.Bool
+  public let y: Swift.Bool
+  public let z: Swift.Bool
+  public init(value: Swift.Int, x: Swift.Bool, y: Swift.Bool, z: Swift.Bool)
+}
+public enum MagnetometerCalibrationState {
+  case uncalibrated
+  case calibrated
+  case magneticInterference
+  public static func == (a: SolosAirGoSDK.MagnetometerCalibrationState, b: SolosAirGoSDK.MagnetometerCalibrationState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum LanguageCode : Swift.String {
+  case en
+  case zh_hans
+  case zh_hant
+  case zh_hant_hk
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PhotoResolution {
+  @_documentation(visibility: public) case _320_240
+  @_documentation(visibility: public) case _640_480
+  @_documentation(visibility: public) case _800_600
+  @_documentation(visibility: public) case _1024_768
+  @_documentation(visibility: public) case _1280_960
+  @_documentation(visibility: public) case _1600_1200
+  @_documentation(visibility: public) case _2048_1536
+  @_documentation(visibility: public) case _2592_1944
+  public static func == (a: SolosAirGoSDK.PhotoResolution, b: SolosAirGoSDK.PhotoResolution) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol SensorListener : SolosAirGoSDK.SolosListener {
+}
+public struct AbsoluteOrientationSensorConfig {
+  public let initialMagnetometerCalibration: SolosAirGoSDK.CalibrationData?
+  public init(initialMagnetometerCalibration: SolosAirGoSDK.CalibrationData? = nil)
+}
+public enum GestureType {
+  case singleTap
+  case doubleTap
+  case forwardSlide
+  case reverseSlide
+  case slidePressed
+  case slideReleased
+  case vbPressed
+  case vbReleased
+  public static func == (a: SolosAirGoSDK.GestureType, b: SolosAirGoSDK.GestureType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SolosGlassesError : SolosAirGoSDK.SolosError {
+  case deviceNotConnected
+  case alreadyStarted
+  public var errorDescription: Swift.String {
+    get
+  }
+  public static func == (a: SolosAirGoSDK.SolosGlassesError, b: SolosAirGoSDK.SolosGlassesError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol SolosListener : AnyObject {
+}
+@_hasMissingDesignatedInitializers public class Sensor<T> {
+  public func start() async throws
+  public func stop() async throws
+  public func addListener(_ listener: T)
+  public func removeListener(_ listener: T)
+  @objc deinit
+}
+public protocol SolosError : Swift.Error {
+  var errorDescription: Swift.String { get }
+}
+extension SolosAirGoSDK.SolosError {
+  public var errorDescription: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Scanner {
+  public func startScan()
+  public func stopScan()
+  public func addScanCallbackListener(_ listener: any SolosAirGoSDK.ScanCallbackListener)
+  public func removeScanCallbackListener(_ listener: any SolosAirGoSDK.ScanCallbackListener)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GestureComponent {
+  public func setGestureOverrides(_ config: SolosAirGoSDK.GestureOverridesConfig) async throws
+  public func clearGestureOverrides() async throws
+  public func addGestureListener(listener: any SolosAirGoSDK.GestureListener)
+  public func removeGestureListener(listener: any SolosAirGoSDK.GestureListener)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AudioSource {
+  public func addPlaybackCompleteListener(_ listener: any SolosAirGoSDK.PlaybackCompleteListener)
+  public func removePlaybackCompleteListener(_ listener: any SolosAirGoSDK.PlaybackCompleteListener)
+  @objc deinit
+}
+@usableFromInline
+internal protocol _AnyDecodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension SolosAirGoSDK._AnyDecodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension SolosAirGoSDK._AnyEncodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension SolosAirGoSDK._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+}
+public protocol AccelerometerListener : SolosAirGoSDK.SensorListener {
+  func onAccelerometerChanged(_ x: Swift.Double, _ y: Swift.Double, _ z: Swift.Double)
+}
+public protocol CameraScanCallbackListener {
+  func onScanResult(_ camera: SolosAirGoSDK.CameraReference)
+}
+public struct AbsoluteOrientationData {
+  public let eulerAngles: SolosAirGoSDK.EulerAngles
+  public let quaternion: SolosAirGoSDK.Quaternion
+  public let magnetometerCalibrationStatus: SolosAirGoSDK.MagnetometerCalibrationStatus
+  public let sensorAndFusionData: SolosAirGoSDK.SensorAndFusionData
+  public init(eulerAngles: SolosAirGoSDK.EulerAngles, quaternion: SolosAirGoSDK.Quaternion, magnetometerCalibrationStatus: SolosAirGoSDK.MagnetometerCalibrationStatus, sensorAndFusionData: SolosAirGoSDK.SensorAndFusionData)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Magnetometer : SolosAirGoSDK.Sensor<any SolosAirGoSDK.MagnetometerListener> {
+  @objc deinit
+}
+public struct Photo {
+  public let format: SolosAirGoSDK.PhotoFormat
+  public let data: Foundation.Data
+  public let resolution: SolosAirGoSDK.PhotoResolution
+}
+@_hasMissingDesignatedInitializers public class CameraComponent {
+  final public let name: Swift.String
+  final public let photoStream: SolosAirGoSDK.PhotoStream
+  public func takePhoto(resolution: SolosAirGoSDK.PhotoResolution) async throws -> SolosAirGoSDK.Photo
+  public func disconnect(eraseCameraInfo: Swift.Bool) async throws
+  @objc deinit
+}
+public enum SolosCameraError : SolosAirGoSDK.SolosError {
+  case deviceNotConnected
+  case photoStreamIsRunning
+  public var errorDescription: Swift.String {
+    get
+  }
+  public static func == (a: SolosAirGoSDK.SolosCameraError, b: SolosAirGoSDK.SolosCameraError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol PhotoStreamListener : AnyObject {
+  func onPhotoStreamed(_ photo: SolosAirGoSDK.Photo)
+}
+public struct Quaternion {
+  public let w: Swift.Double
+  public let x: Swift.Double
+  public let y: Swift.Double
+  public let z: Swift.Double
+  public init(w: Swift.Double, x: Swift.Double, y: Swift.Double, z: Swift.Double)
+}
+public struct CalibrationData : Swift.Codable {
+  public let minX: Swift.Double
+  public let maxX: Swift.Double
+  public let minY: Swift.Double
+  public let maxY: Swift.Double
+  public let minZ: Swift.Double
+  public let maxZ: Swift.Double
+  public init(minX: Swift.Double, maxX: Swift.Double, minY: Swift.Double, maxY: Swift.Double, minZ: Swift.Double, maxZ: Swift.Double)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Accelerometer : SolosAirGoSDK.Sensor<any SolosAirGoSDK.AccelerometerListener> {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AbsoluteOrientationSensor : SolosAirGoSDK.Sensor<any SolosAirGoSDK.AbsoluteOrientationSensorListener> {
+  public func start(config: SolosAirGoSDK.AbsoluteOrientationSensorConfig) async throws
+  override public func start() async throws
+  override public func stop() async throws
+  @objc deinit
+}
+public struct GestureOverridesConfig {
+  public let disableVbForPowerOff: Swift.Bool
+  public let disableSlideForVolumeControl: Swift.Bool
+  public let disableSingleTapForMusicControl: Swift.Bool
+  public let disableDoubleTapForVoiceAssistant: Swift.Bool
+  public init(disableVbForPowerOff: Swift.Bool = false, disableSlideForVolumeControl: Swift.Bool = false, disableSingleTapForMusicControl: Swift.Bool = false, disableDoubleTapForVoiceAssistant: Swift.Bool = false)
+}
+public protocol MagnetometerListener : SolosAirGoSDK.SensorListener {
+  func onMagnetometerChanged(_ x: Swift.Double, _ y: Swift.Double, _ z: Swift.Double)
+}
+@_hasMissingDesignatedInitializers public class CameraReference {
+  final public let name: Swift.String
+  public func connect() async throws
+  @objc deinit
+}
+public protocol AudioPlayer {
+  func play(_ source: SolosAirGoSDK.AudioSource) throws
+  func stop(_ source: SolosAirGoSDK.AudioSource) throws
+}
+public protocol GyroscopeListener : SolosAirGoSDK.SensorListener {
+  func onGyroscopeChanged(_ x: Swift.Double, _ y: Swift.Double, _ z: Swift.Double)
+}
+@_hasMissingDesignatedInitializers public class SensorComponent {
+  final public let accelerometer: SolosAirGoSDK.Accelerometer
+  final public let gyroscope: SolosAirGoSDK.Gyroscope
+  final public let uncalibratedMagnetometer: SolosAirGoSDK.Magnetometer
+  final public let absoluteOrientationSensor: SolosAirGoSDK.AbsoluteOrientationSensor
+  @available(*, deprecated, renamed: "absoluteOrientationSensor", message: "Use absoluteOrientationSensor instead")
+  public var absoluteOrientation: SolosAirGoSDK.AbsoluteOrientationSensor {
+    get
+  }
+  @objc deinit
+}
+public protocol PlaybackCompleteListener : SolosAirGoSDK.SolosListener {
+  func onPlaybackComplete()
+}
+public struct SensorAndFusionData {
+  public let accelerometer: SolosAirGoSDK.Vector3
+  public let gyroscope: SolosAirGoSDK.Vector3
+  public let calibratedMagnetometer: SolosAirGoSDK.Vector3
+  public let gravity: SolosAirGoSDK.Vector3
+  public let linearAcceleration: SolosAirGoSDK.Vector3
+  public let earthAcceleration: SolosAirGoSDK.Vector3
+  public init(accelerometer: SolosAirGoSDK.Vector3, gyroscope: SolosAirGoSDK.Vector3, calibratedMagnetometer: SolosAirGoSDK.Vector3, gravity: SolosAirGoSDK.Vector3, linearAcceleration: SolosAirGoSDK.Vector3, earthAcceleration: SolosAirGoSDK.Vector3)
+}
+@_hasMissingDesignatedInitializers public class FileAudioSource : SolosAirGoSDK.AudioSource {
+  public var playbackMode: SolosAirGoSDK.PlaybackMode
+  public var leftVolume: Swift.Float
+  public var rightVolume: Swift.Float
+  public var bpm: Swift.Double?
+  public init(bundleFilePath: Swift.String)
+  public init(fullFilePath: Swift.String)
+  public init(documentsFileName: Swift.String)
+  public init(temporaryFileName: Swift.String)
+  public init(downloadFileName: Swift.String)
+  public init(fileUrl: Foundation.URL)
+  public func preload() async throws
+  @discardableResult
+  public func setPlaybackMode(_ mode: SolosAirGoSDK.PlaybackMode) -> SolosAirGoSDK.FileAudioSource
+  @discardableResult
+  public func setPlaybackMode(_ mode: SolosAirGoSDK.PlaybackMode, bpm: Swift.Double?) -> SolosAirGoSDK.FileAudioSource
+  @discardableResult
+  public func setVolume(_ volume: Swift.Float) -> SolosAirGoSDK.FileAudioSource
+  @discardableResult
+  public func setVolume(leftVolume: Swift.Float, rightVolume: Swift.Float) -> SolosAirGoSDK.FileAudioSource
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AudioComponent {
+  final public let microphone: SolosAirGoSDK.Microphone
+  final public let speaker: SolosAirGoSDK.Speaker
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SystemComponent {
+  final public let persistentStorage: SolosAirGoSDK.PersistentStorage
+  public func getFirmwareVersion() async throws -> Swift.String
+  public func getSerialNumber() async throws -> Swift.String
+  public func getCameraBtName() async throws -> Swift.String
+  public func getTapSensitivity() async throws -> SolosAirGoSDK.TapSensitivityConfig
+  public func setTapSensitivity(_ config: SolosAirGoSDK.TapSensitivityConfig) async throws
+  public func setLanguage(_ languageCode: SolosAirGoSDK.LanguageCode) async throws
+  public func factoryReset() async throws
+  public func powerOff() async throws
+  public func reboot() async throws
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BrandConfiguration {
+  public static let solosAirGo3: SolosAirGoSDK.BrandConfiguration
+  public static let solosAirGoV: SolosAirGoSDK.BrandConfiguration
+  public class Builder {
+    public init()
+    @discardableResult
+    public func setGlassesName(_ glassesName: Swift.String) -> SolosAirGoSDK.BrandConfiguration.Builder
+    @discardableResult
+    public func setGlassesNameAllowSuffix(_ allowSuffix: Swift.Bool) -> SolosAirGoSDK.BrandConfiguration.Builder
+    @discardableResult
+    public func setHasCamera(_ hasCamera: Swift.Bool) -> SolosAirGoSDK.BrandConfiguration.Builder
+    @discardableResult
+    public func setCameraName(_ cameraName: Swift.String) -> SolosAirGoSDK.BrandConfiguration.Builder
+    @discardableResult
+    public func setCameraNameAllowSuffix(_ allowSuffix: Swift.Bool) -> SolosAirGoSDK.BrandConfiguration.Builder
+    public func build() -> SolosAirGoSDK.BrandConfiguration
+    @objc deinit
+  }
+  @objc deinit
+}
+public enum CameraReconnectionResultType {
+  case success
+  case alreadyConnected
+  case cameraNotConfigured
+  case noCameraStored
+  case connectionTimeout
+  public static func == (a: SolosAirGoSDK.CameraReconnectionResultType, b: SolosAirGoSDK.CameraReconnectionResultType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct MagnetometerCalibrationStatus {
+  public let calibrationState: SolosAirGoSDK.MagnetometerCalibrationState
+  public let calibrationProgress: Swift.Int
+  public let calibrationAccuracy: SolosAirGoSDK.MagnetometerCalibrationAccuracy
+  public let magnetometerBias: SolosAirGoSDK.Vector3
+  public let magnetometerRadii: SolosAirGoSDK.Vector3
+  public let magnetometerScaleFactors: SolosAirGoSDK.Vector3
+  public init(calibrationState: SolosAirGoSDK.MagnetometerCalibrationState, calibrationProgress: Swift.Int, calibrationAccuracy: SolosAirGoSDK.MagnetometerCalibrationAccuracy, magnetometerBias: SolosAirGoSDK.Vector3, magnetometerRadii: SolosAirGoSDK.Vector3, magnetometerScaleFactors: SolosAirGoSDK.Vector3)
+}
+public enum PlaybackMode {
+  case playOnce
+  case loop
+  public static func == (a: SolosAirGoSDK.PlaybackMode, b: SolosAirGoSDK.PlaybackMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class PhotoStream {
+  public func start(resolution: SolosAirGoSDK.PhotoResolution) async throws
+  public func stop() async throws
+  public func addListener(_ listener: any SolosAirGoSDK.PhotoStreamListener)
+  public func removeListener(_ listener: any SolosAirGoSDK.PhotoStreamListener)
+  @objc deinit
+}
+public class Manager {
+  public init(config: SolosAirGoSDK.BrandConfiguration)
+  public func getScanner() -> SolosAirGoSDK.Scanner
+  @objc deinit
+}
+public protocol AbsoluteOrientationSensorListener : SolosAirGoSDK.SensorListener {
+  func onAbsoluteOrientationChanged(_ data: SolosAirGoSDK.AbsoluteOrientationData)
+  func onMagnetometerCalibrationUpdated(_ calibrationData: SolosAirGoSDK.CalibrationData)
+}
+public protocol ScanCallbackListener : SolosAirGoSDK.SolosListener {
+  func onScanResult(_ glasses: SolosAirGoSDK.SolosGlasses)
+}
+@_hasMissingDesignatedInitializers public class BatteryComponent {
+  public func getBatteryLevel() async throws -> Swift.Int
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Microphone {
+  public func start() async throws
+  public func stop() async throws
+  public func addListener(_ listener: any SolosAirGoSDK.MicrophoneListener)
+  public func removeListener(_ listener: any SolosAirGoSDK.MicrophoneListener)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SolosGlasses : Swift.Identifiable, Swift.Equatable {
+  final public let name: Swift.String
+  public var audio: SolosAirGoSDK.AudioComponent? {
+    get
+  }
+  public var battery: SolosAirGoSDK.BatteryComponent? {
+    get
+  }
+  public var camera: SolosAirGoSDK.CameraComponent? {
+    get
+  }
+  public var cameraScanner: SolosAirGoSDK.CameraScanner? {
+    get
+  }
+  public var gesture: SolosAirGoSDK.GestureComponent? {
+    get
+  }
+  public var sensor: SolosAirGoSDK.SensorComponent? {
+    get
+  }
+  public var system: SolosAirGoSDK.SystemComponent? {
+    get
+  }
+  public var status: SolosAirGoSDK.GlassesStatus {
+    get
+    set
+  }
+  public func connect() async throws
+  public func disconnect() async throws
+  public func addStatusChangeListener(_ listener: any SolosAirGoSDK.StatusChangeListener)
+  public func removeStatusChangeListener(_ listener: any SolosAirGoSDK.StatusChangeListener)
+  public func addCameraAvailabilityListener(_ listener: any SolosAirGoSDK.CameraAvailabilityListener)
+  public func removeCameraAvailabilityListener(_ listener: any SolosAirGoSDK.CameraAvailabilityListener)
+  public func reconnectCamera() async throws -> SolosAirGoSDK.CameraReconnectionResult
+  public static func == (lhs: SolosAirGoSDK.SolosGlasses, rhs: SolosAirGoSDK.SolosGlasses) -> Swift.Bool
+  public typealias ID = Swift.ObjectIdentifier
+  @objc deinit
+}
+public struct Vector3 {
+  public let x: Swift.Double
+  public let y: Swift.Double
+  public let z: Swift.Double
+  public init(x: Swift.Double, y: Swift.Double, z: Swift.Double)
+}
+public protocol GestureListener {
+  func onGestureDetected(_ gestureType: SolosAirGoSDK.GestureType)
+}
+@_hasMissingDesignatedInitializers public class MagnetometerCalibrationStorage {
+  public func save(_ calibrationData: SolosAirGoSDK.CalibrationData) async throws
+  public func load() async throws -> SolosAirGoSDK.CalibrationData
+  public func clear() async throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Gyroscope : SolosAirGoSDK.Sensor<any SolosAirGoSDK.GyroscopeListener> {
+  @objc deinit
+}
+public protocol CameraAvailabilityListener : SolosAirGoSDK.SolosListener {
+  func onCameraAvailabilityChanged(available: Swift.Bool)
+}
+public protocol MicrophoneListener : SolosAirGoSDK.SolosListener {
+  func onMicrophoneDataReceived(_ pcm: AVFAudio.AVAudioPCMBuffer)
+}
+@_hasMissingDesignatedInitializers public class Speaker {
+  final public let parallelPlayer: any SolosAirGoSDK.AudioPlayer
+  final public let sequentialPlayer: any SolosAirGoSDK.AudioPlayer
+  @objc deinit
+}
+public protocol StatusChangeListener : SolosAirGoSDK.SolosListener {
+  func onStatusChanged(status: SolosAirGoSDK.GlassesStatus)
+}
+public struct EulerAngles {
+  public let roll: Swift.Double
+  public let pitch: Swift.Double
+  public let yaw: Swift.Double
+  public init(roll: Swift.Double, pitch: Swift.Double, yaw: Swift.Double)
+}
+@_hasMissingDesignatedInitializers public class CameraScanner {
+  public func startScan()
+  public func stopScan()
+  public func addScanCallbackListener(_ listener: any SolosAirGoSDK.CameraScanCallbackListener)
+  public func removeScanCallbackListener(_ listener: any SolosAirGoSDK.CameraScanCallbackListener)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PcmAudioSource : SolosAirGoSDK.AudioSource {
+  public init(sampleRate: Swift.Int = 44100, channels: Swift.Int = 1, bitsPerSample: Swift.Int = 16, isLittleEndian: Swift.Bool = true)
+  public func appendData(_ data: Foundation.Data)
+  public func clearBuffer()
+  public func getBufferSize() -> Swift.Int
+  @discardableResult
+  public func setPlaybackMode(_ mode: SolosAirGoSDK.PlaybackMode) -> SolosAirGoSDK.PcmAudioSource
+  @discardableResult
+  public func setVolume(_ volume: Swift.Float) -> SolosAirGoSDK.PcmAudioSource
+  @discardableResult
+  public func setPlaybackRate(_ rate: Swift.Float) -> SolosAirGoSDK.PcmAudioSource
+  public func play() throws
+  public func stop() throws
+  @objc deinit
+}
+public struct CameraReconnectionResult {
+  public let type: SolosAirGoSDK.CameraReconnectionResultType
+  public let message: Swift.String
+  public let error: (any Swift.Error)?
+  public func isCameraConnected() -> Swift.Bool
+}
+public enum MagnetometerCalibrationAccuracy {
+  case low
+  case medium
+  case high
+  public static func == (a: SolosAirGoSDK.MagnetometerCalibrationAccuracy, b: SolosAirGoSDK.MagnetometerCalibrationAccuracy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum GlassesStatus {
+  case disconnected
+  case connected
+  public static func == (a: SolosAirGoSDK.GlassesStatus, b: SolosAirGoSDK.GlassesStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PhotoFormat {
+  case jpeg
+  public static func == (a: SolosAirGoSDK.PhotoFormat, b: SolosAirGoSDK.PhotoFormat) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct SolosSdkLibrary {
+  public static func getSdkVersion() -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class PersistentStorage {
+  final public let magnetometerCalibration: SolosAirGoSDK.MagnetometerCalibrationStorage
+  @objc deinit
+}
+extension SolosAirGoSDK.MagnetometerCalibrationState : Swift.Equatable {}
+extension SolosAirGoSDK.MagnetometerCalibrationState : Swift.Hashable {}
+extension SolosAirGoSDK.LanguageCode : Swift.Equatable {}
+extension SolosAirGoSDK.LanguageCode : Swift.Hashable {}
+extension SolosAirGoSDK.LanguageCode : Swift.RawRepresentable {}
+extension SolosAirGoSDK.PhotoResolution : Swift.Equatable {}
+extension SolosAirGoSDK.PhotoResolution : Swift.Hashable {}
+extension SolosAirGoSDK.GestureType : Swift.Equatable {}
+extension SolosAirGoSDK.GestureType : Swift.Hashable {}
+extension SolosAirGoSDK.SolosGlassesError : Swift.Equatable {}
+extension SolosAirGoSDK.SolosGlassesError : Swift.Hashable {}
+extension SolosAirGoSDK.SolosCameraError : Swift.Equatable {}
+extension SolosAirGoSDK.SolosCameraError : Swift.Hashable {}
+extension SolosAirGoSDK.CameraReconnectionResultType : Swift.Equatable {}
+extension SolosAirGoSDK.CameraReconnectionResultType : Swift.Hashable {}
+extension SolosAirGoSDK.PlaybackMode : Swift.Equatable {}
+extension SolosAirGoSDK.PlaybackMode : Swift.Hashable {}
+extension SolosAirGoSDK.MagnetometerCalibrationAccuracy : Swift.Equatable {}
+extension SolosAirGoSDK.MagnetometerCalibrationAccuracy : Swift.Hashable {}
+extension SolosAirGoSDK.GlassesStatus : Swift.Equatable {}
+extension SolosAirGoSDK.GlassesStatus : Swift.Hashable {}
+extension SolosAirGoSDK.PhotoFormat : Swift.Equatable {}
+extension SolosAirGoSDK.PhotoFormat : Swift.Hashable {}

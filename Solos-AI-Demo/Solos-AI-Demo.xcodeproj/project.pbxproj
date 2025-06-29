@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		624B34202E0C802000A9EAFF /* SolosAirGoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624B341F2E0C802000A9EAFF /* SolosAirGoSDK.framework */; };
+		624B34212E0C802000A9EAFF /* SolosAirGoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 624B341F2E0C802000A9EAFF /* SolosAirGoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		624B34032E0C801200A9EAFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +28,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		624B34222E0C802000A9EAFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				624B34212E0C802000A9EAFF /* SolosAirGoSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		624B33E92E0C800400A9EAFF /* Solos-AI-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Solos-AI-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624B34022E0C801200A9EAFF /* Solos-AI-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Solos-AI-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624B340C2E0C801200A9EAFF /* Solos-AI-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Solos-AI-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		624B341F2E0C802000A9EAFF /* SolosAirGoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SolosAirGoSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624B34202E0C802000A9EAFF /* SolosAirGoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +113,7 @@
 				624B34052E0C801200A9EAFF /* Solos-AI-DemoTests */,
 				624B340F2E0C801200A9EAFF /* Solos-AI-DemoUITests */,
 				624B33EA2E0C800400A9EAFF /* Products */,
+				624B341F2E0C802000A9EAFF /* SolosAirGoSDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +137,7 @@
 				624B33E52E0C800400A9EAFF /* Sources */,
 				624B33E62E0C800400A9EAFF /* Frameworks */,
 				624B33E72E0C800400A9EAFF /* Resources */,
+				624B34222E0C802000A9EAFF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +313,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P878UE7Y85;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Solos-AI-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +324,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,6 +346,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P878UE7Y85;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Solos-AI-Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +357,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
